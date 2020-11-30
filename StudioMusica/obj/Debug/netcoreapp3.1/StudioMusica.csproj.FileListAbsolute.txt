@@ -46,7 +46,6 @@ F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1
 F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\StudioMusica.dll
 F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\StudioMusica.pdb
 F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\StudioMusica.genruntimeconfig.cache
-F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\Razor\Views\Studio\Musico.cshtml.g.cs
 F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -76,3 +75,4 @@ F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\bin\Debug\netcoreapp3.1
 F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\StudioMusica.csproj.CoreCompileInputs.cache
 F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\StudioMusica.MvcApplicationPartsAssemblyInfo.cache
+F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\Razor\Views\Studio\RegistroMusico.cshtml.g.cs

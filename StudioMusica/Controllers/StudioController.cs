@@ -8,7 +8,7 @@ namespace StudioMusica.Controllers
 {
     public class StudioController : Controller
     {
-        public IActionResult Musico()
+        public IActionResult RegistroMusico()
         {
             return View();
         }
