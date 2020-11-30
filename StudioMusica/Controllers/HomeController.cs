@@ -21,11 +21,14 @@ namespace StudioMusica.Controllers
         public IActionResult Index()
         {
             return View();
+           
+                
         }
-
         public IActionResult Privacy()
         {
+            ViewData["Message"] = "Seja bem vindo as definições de política de privacidade da JAG Studio Music";
             return View();
+            
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
