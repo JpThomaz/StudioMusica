@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\StudioMusica",
-    "\\StudioMusica\\Views"
+    "\\StudioMusica\\Views",
+    "\\StudioMusica\\Views\\Musico"
   ],
-  "SelectedNode": "\\StudioMusica.sln",
+  "SelectedNode": "\\StudioMusica\\Views\\_ViewStart.cshtml",
   "PreviewInSolutionExplorer": false
 }
