@@ -15,5 +15,14 @@ namespace StudioMusica.Models
         public string Estado { get; set; }
         public string Cidade { get; set; }
         public string Bairro { get; set; }
+        public Musico()
+        {
+
+        }
+
+        internal void Add(Musico musicosD)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
