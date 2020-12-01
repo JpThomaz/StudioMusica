@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projetos DEV\\Faculdade\\CRUD\\StudioMusica\\StudioMusica\\StudioMusica.csproj": {}
+    "C:\\StudioMusica\\StudioMusica\\StudioMusica.csproj": {}
   },
   "projects": {
-    "F:\\Projetos DEV\\Faculdade\\CRUD\\StudioMusica\\StudioMusica\\StudioMusica.csproj": {
+    "C:\\StudioMusica\\StudioMusica\\StudioMusica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projetos DEV\\Faculdade\\CRUD\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
+        "projectUniqueName": "C:\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
         "projectName": "StudioMusica",
-        "projectPath": "F:\\Projetos DEV\\Faculdade\\CRUD\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
-        "packagesPath": "C:\\Users\\DE PAULA\\.nuget\\packages\\",
-        "outputPath": "F:\\Projetos DEV\\Faculdade\\CRUD\\StudioMusica\\StudioMusica\\obj\\",
+        "projectPath": "C:\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
+        "packagesPath": "C:\\Users\\Amand\\.nuget\\packages\\",
+        "outputPath": "C:\\StudioMusica\\StudioMusica\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\DE PAULA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Amand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -42,7 +42,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.0, )"
             },

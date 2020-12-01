@@ -5,14 +5,31 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StudioMusica.Data;
+<<<<<<< HEAD
 using StudioMusica.Models;
+=======
+>>>>>>> 1e3cf6aec4768ebd439f46879824ac25340168a1
 
 namespace StudioMusica.Controllers
 {
     public class StudioController : Controller
     {
+<<<<<<< HEAD
         [HttpPost]
         [ValidateAntiForgeryToken]
+=======
+        private readonly StudioContext _context;
+
+        public StudioController(StudioContext context)
+        {
+            _context = context;
+        }
+        
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Musicos.OrderBy(a => a.Nome).ToListAsync());
+        }
+>>>>>>> 1e3cf6aec4768ebd439f46879824ac25340168a1
         public IActionResult RegistroMusico()
         {
             return View();
