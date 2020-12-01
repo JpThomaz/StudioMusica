@@ -157,7 +157,6 @@ F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1
 F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\Razor\Views\Studio\Edit.cshtml.g.cs
 F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\Razor\Views\Studio\Delete.cshtml.g.cs
 =======
-F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\Razor\Views\Studio\RegistroMusico.cshtml.g.cs
 C:\StudioMusica\StudioMusica\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\StudioMusica\StudioMusica\bin\Debug\netcoreapp3.1\appsettings.json
 C:\StudioMusica\StudioMusica\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -314,3 +313,6 @@ C:\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\Razor\Views\Studio\Index.cs
 C:\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\Razor\Views\Musico\Index.cshtml.g.cs
 C:\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Musico\Index.cshtml.g.cs
 >>>>>>> 1e3cf6aec4768ebd439f46879824ac25340168a1
+F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\Razor\Views\Musico\Index.cshtml.g.cs
+F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Musico\Index.cshtml.g.cs
+F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\Razor\Views\Studio\Index.cshtml.g.cs
