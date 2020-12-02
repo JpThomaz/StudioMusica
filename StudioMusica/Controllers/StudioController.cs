@@ -32,14 +32,16 @@ namespace StudioMusica.Controllers
         }
        
 
-        
+        /*              ============================================
+             ======================= CRUD Classe *Musico*=============================
+             ========================================================================= */
         public IActionResult Create()
         {
             return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind(" MusicoId,Nome, Telefone, Endereço, Numero, Estado, Cidade, Bairro")] Musico musico)
+        public async Task<IActionResult> Create([Bind(" Nome, Telefone, Endereço, Numero, Estado, Cidade, Bairro")] Musico musico)
         {
             try
             {
@@ -56,6 +58,7 @@ namespace StudioMusica.Controllers
             }
             return View(musico);
         }
+        //======================================= Details ====================
         public async Task<IActionResult> Details(long? id)
         {
             if (id == null)
@@ -69,12 +72,13 @@ namespace StudioMusica.Controllers
             }
             return View(musico);
         }
+        //================================= Edit ==============================
         public async Task<IActionResult> Edit(long? id)
         {
-            if (id == null)
+            /*if (id == null)
             {
                 return NotFound();
-            }
+            }*/
             var musico = await _context.Musicos.SingleOrDefaultAsync(a => a.MusicoID == id);
             if (musico == null)
             {
@@ -88,10 +92,10 @@ namespace StudioMusica.Controllers
         {
            
             
-           /* if (id != musico.MusicoID)
+           if (id != musico.MusicoID)
             {
                 return NotFound();
-            }*/
+            }
            if (ModelState.IsValid)
             {
                 try
@@ -118,6 +122,7 @@ namespace StudioMusica.Controllers
         {
             return _context.Musicos.Any(a => a.MusicoID == id);
         }
+        //============ Delete ==========================
         public async Task<IActionResult> Delete(long? id)
         {
             if (id == null)
@@ -142,6 +147,7 @@ namespace StudioMusica.Controllers
             return RedirectToAction(nameof(Indexmusico));
 
         }
+        //=================== View  CRUD Musico =======================
         public async Task<IActionResult> Indexmusico()
         {
             return View(await _context.Musicos.OrderBy(i => i.Nome).ToListAsync());

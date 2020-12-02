@@ -20,7 +20,7 @@ namespace StudioMusica.Models
 
         }
 
-        internal void Add(Musico musicosD)
+        internal void Add(Musico musicos)
         {
             throw new NotImplementedException();
         }

@@ -15,5 +15,6 @@ namespace StudioMusica.Data
         }
 
         public DbSet <Musico> Musicos { get; set; }
+        public DbSet <Instrumento> Instrumentos { get; set; }
     }
 }
