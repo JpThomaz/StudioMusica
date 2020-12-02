@@ -12,7 +12,8 @@ namespace StudioMusica.Models
         public string Marca { get; set; }
         public string Modelo { get; set; }
         public string Serie { get; set; }
-        
+        public string Cor { get; set; }
+
         public Instrumento()
         {
 

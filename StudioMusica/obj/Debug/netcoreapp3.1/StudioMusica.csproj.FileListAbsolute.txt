@@ -316,3 +316,4 @@ C:\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Musico\I
 F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\Razor\Views\Musico\Index.cshtml.g.cs
 F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Musico\Index.cshtml.g.cs
 F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\Razor\Views\Studio\Index.cshtml.g.cs
+F:\Projetos DEV\Faculdade\CRUD\StudioMusica\StudioMusica\obj\Debug\netcoreapp3.1\Razor\Views\Studio\Indexinstrumento.cshtml.g.cs

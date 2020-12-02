@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4TNUyKZ2OJIHgVXuLuvoLUAsNmu4Ml1XNzN2Se2LRnyyI1XKiXMgnKy6wySkAzwT5CuSqbXZ/wIhLmOo48j4Ag==",
+  "dgSpecHash": "6lpDBRgYZNIjDVR6og9fn7e4bxMWMtJE5k5lO8GbKrz9VP4oSlyMrQMhFKxKDrdcmGcOLNoUjD+ylM4FUxYVEg==",
   "success": true,
   "projectFilePath": "F:\\Projetos DEV\\Faculdade\\CRUD\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "C:\\Users\\DE PAULA\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.0\\microsoft.entityframeworkcore.design.5.0.0.nupkg.sha512",
     "C:\\Users\\DE PAULA\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.0\\microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512",
     "C:\\Users\\DE PAULA\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.0\\microsoft.entityframeworkcore.sqlserver.5.0.0.nupkg.sha512",
+    "C:\\Users\\DE PAULA\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.0\\microsoft.entityframeworkcore.tools.5.0.0.nupkg.sha512",
     "C:\\Users\\DE PAULA\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\DE PAULA\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\DE PAULA\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
@@ -161,12 +162,5 @@
     "C:\\Users\\DE PAULA\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\DE PAULA\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache F:\\Projetos DEV\\Faculdade\\CRUD\\StudioMusica\\StudioMusica\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

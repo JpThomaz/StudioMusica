@@ -68,12 +68,7 @@ namespace StudioMusica
                     name: "Registrarmusicos",
                     pattern: "{controller=Studio}/{action=RegistroMusico}/{id?}");
             });
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "musicos",
-                    pattern: "{controller=Studio}/{action=musico}/{id?}");
-            });
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
