@@ -1,0 +1,48 @@
+﻿@model IEnumerable<StudioMusica.Models.Album>
+
+@{
+    ViewData["Title"] = "IndexAlbum";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Editar Album</h1>
+
+<p>
+    <a asp-action = "CreateAlbum">Criar Novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataAlbum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Formato)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataAlbum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Formato)
+            </td>
+            <td>
+                <a asp-action="EditAlbum" asp-route-id="@item.AlbumID">Edit</a> |
+                <a asp-action="DetailsAlbum" asp-route-id="@item.AlbumID">Details</a> |
+                <a asp-action="DeleteAlbum" asp-route-id="@item.AlbumID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

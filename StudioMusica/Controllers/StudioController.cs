@@ -77,21 +77,21 @@ namespace StudioMusica.Controllers
             {
                 return NotFound();
             }
-            var musicos = await _context.Musicos.SingleOrDefaultAsync(a => a.MusicoID == id);
-            if (musicos == null)
+            var musico = await _context.Musicos.SingleOrDefaultAsync(a => a.MusicoID == id);
+            if (musico == null)
             {
                 return NotFound();
             }
-            return View(musicos);
+            return View(musico);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
 
-        public async Task<IActionResult> Edit(long? id,[Bind("MusicoId,Nome, Telefone, Endereço, Numero, Estado, Cidade, Bairro")] Musico musicos)
+        public async Task<IActionResult> Edit(long? id,[Bind("MusicoId,Nome, Telefone, Endereço, Numero, Estado, Cidade, Bairro")] Musico musico)
         {
 
 
-            if (id != musicos.MusicoID)
+            if (id != musico.MusicoID)
             {
                 return NotFound();
             }
@@ -99,12 +99,12 @@ namespace StudioMusica.Controllers
             {
                 try
                 {
-                    _context.Update(musicos);
+                    _context.Update(musico);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!MusicoExists(musicos.MusicoID))
+                    if (!MusicoExists(musico.MusicoID))
                     {
                         return NotFound();
                     }
@@ -115,7 +115,7 @@ namespace StudioMusica.Controllers
                 }
                 return RedirectToAction(nameof(Indexmusico));
             }
-            return View(musicos);
+            return View(musico);
         }
         public bool MusicoExists (long? id)
         {
@@ -175,7 +175,7 @@ namespace StudioMusica.Controllers
                 {
                     _context.Add(instrumento);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Indexistrumento));
+                    return RedirectToAction(nameof(Indexinstrumento));
                 }
             }
             catch (DbUpdateException)
@@ -187,7 +187,7 @@ namespace StudioMusica.Controllers
 
 
         //=================== View  CRUD Instrumento =======================
-        public async Task<IActionResult> Indexistrumento()
+        public async Task<IActionResult> Indexinstrumento()
         {
             return View(await _context.Instrumentos.OrderBy(i => i.Nome).ToListAsync());
         }
@@ -218,12 +218,12 @@ namespace StudioMusica.Controllers
             {
                 return NotFound();
             }
-            var instrumentos = await _context.Instrumentos.SingleOrDefaultAsync(a => a.InstrumentoID == id);
-            if (instrumentos == null)
+            var instrumento = await _context.Instrumentos.SingleOrDefaultAsync(a => a.InstrumentoID == id);
+            if (instrumento == null)
             {
                 return NotFound();
             }
-            return View(instrumentos);
+            return View(instrumento);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -254,7 +254,7 @@ namespace StudioMusica.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Indexistrumento));
+                return RedirectToAction(nameof(Indexinstrumento));
             }
             return View(instrumento);
         }
@@ -276,7 +276,7 @@ namespace StudioMusica.Controllers
             }
             return View(instrumento);
         }
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("DeleteInstrumento")]
         [ValidateAntiForgeryToken]
 
         public async Task<IActionResult> DeleteConfirmedInstrumento(long? id)
@@ -284,9 +284,273 @@ namespace StudioMusica.Controllers
             var instrumento = await _context.Instrumentos.SingleOrDefaultAsync(a => a.InstrumentoID == id);
             _context.Instrumentos.Remove(instrumento);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Indexistrumento));
+            return RedirectToAction(nameof(Indexinstrumento));
 
         }
-       
+
+
+
+        /*              ============================================
+           ======================= CRUD Classe Faixa =============================
+           ========================================================================= */
+        public IActionResult CreateFaixa()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateFaixa([Bind("FaixaID, Nome, Autor, DataLancamento,Volume ")] Faixa faixa)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _context.Add(faixa);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(IndexFaixa));
+                }
+            }
+            catch (DbUpdateException)
+            {
+                ModelState.AddModelError("", "Não foi possível inserir dados.");
+            }
+            return View(faixa);
+        }
+
+
+        //=================== View  CRUD Faixa =======================
+        public async Task<IActionResult> IndexFaixa()
+        {
+            return View(await _context.Faixas.OrderBy(i => i.Nome).ToListAsync());
+        }
+
+
+        //======================================= Details ====================
+        public async Task<IActionResult> DetailsFaixa(long? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var faixa = await _context.Faixas.SingleOrDefaultAsync(a => a.FaixaId == id);
+            if (faixa == null)
+            {
+                return NotFound();
+            }
+            return View(faixa);
+        }
+
+
+
+        //================================= Edit ==============================
+
+        public async Task<IActionResult> EditFaixa(long? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var faixa = await _context.Faixas.SingleOrDefaultAsync(a => a.FaixaId == id);
+            if (faixa == null)
+            {
+                return NotFound();
+            }
+            return View(faixa);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public async Task<IActionResult> EditFaixa(long? id, [Bind("FaixaID, Nome, Autor, DataLancamento,Volume ")] Faixa faixa)
+        {
+
+
+            if (id != faixa.FaixaId)
+            {
+                return NotFound();
+            }
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(faixa);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!FaixaExists(faixa.FaixaId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(IndexFaixa));
+            }
+            return View(faixa);
+        }
+        public bool FaixaExists(long? id)
+        {
+            return _context.Faixas.Any(a => a.FaixaId == id);
+        }
+        //============ Delete ==========================
+        public async Task<IActionResult> DeleteFaixa(long? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var faixa = await _context.Faixas.SingleOrDefaultAsync(a => a.FaixaId == id);
+            if (faixa == null)
+            {
+                return NotFound();
+            }
+            return View(faixa);
+        }
+        [HttpPost, ActionName("DeleteFaixa")]
+        [ValidateAntiForgeryToken]
+
+        public async Task<IActionResult> DeleteConfirmedFaixa(long? id)
+        {
+            var faixa = await _context.Faixas.SingleOrDefaultAsync(a => a.FaixaId == id);
+            _context.Faixas.Remove(faixa);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(IndexFaixa));
+
+        }
+
+
+                  
+        /*              ============================================
+          ======================= CRUD Classe Album =============================
+          ========================================================================= */
+        public IActionResult CreateAlbum()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateAlbum([Bind("AlbumID, Nome, DataAlbum, Formato")] Album album)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _context.Add(album);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(IndexAlbum));
+                }
+            }
+            catch (DbUpdateException)
+            {
+                ModelState.AddModelError("", "Não foi possível inserir dados.");
+            }
+            return View(album);
+        }
+
+
+        //=================== View  CRUD Faixa =======================
+        public async Task<IActionResult> IndexAlbum()
+        {
+            return View(await _context.Albuns.OrderBy(i => i.Nome).ToListAsync());
+        }
+
+
+        //======================================= Details ====================
+        public async Task<IActionResult> DetailsAlbum(long? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var album = await _context.Albuns.SingleOrDefaultAsync(a => a.AlbumID == id);
+            if (album == null)
+            {
+                return NotFound();
+            }
+            return View(album);
+        }
+
+
+
+        //================================= Edit ==============================
+
+        public async Task<IActionResult> EditAlbum(long? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var album = await _context.Albuns.SingleOrDefaultAsync(a => a.AlbumID == id);
+            if (album == null)
+            {
+                return NotFound();
+            }
+            return View(album);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public async Task<IActionResult> EditAlbum(long? id, [Bind("AlbumID, Nome, DataAlbum, Formato")] Album album)
+        {
+
+
+            if (id != album.AlbumID)
+            {
+                return NotFound();
+            }
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(album);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!AlbumExists(album.AlbumID))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(IndexAlbum));
+            }
+            return View(album);
+        }
+        public bool AlbumExists(long? id)
+        {
+            return _context.Albuns.Any(a => a.AlbumID == id);
+        }
+        //============ Delete ==========================
+        public async Task<IActionResult> DeleteAlbum(long? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var album = await _context.Albuns.SingleOrDefaultAsync(a => a.AlbumID == id);
+            if (album == null)
+            {
+                return NotFound();
+            }
+            return View(album);
+        }
+        [HttpPost, ActionName("DeleteAlbum")]
+        [ValidateAntiForgeryToken]
+
+        public async Task<IActionResult> DeleteConfirmedAlbum(long? id)
+        {
+            var album = await _context.Albuns.SingleOrDefaultAsync(a => a.AlbumID == id);
+            _context.Albuns.Remove(album);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(IndexAlbum));
+
+        }
+
     }
 }
