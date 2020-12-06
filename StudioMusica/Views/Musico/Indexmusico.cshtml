@@ -1,0 +1,144 @@
+﻿@model IEnumerable<StudioMusica.Models.Musico>
+
+@{
+    ViewData["Title"] = "musico";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--
+<h1>Lista de Musicos</h1>
+
+<p>
+    <a asp-action="Create">Adicionar</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Endereço)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Numero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bairro)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Endereço)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Numero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bairro)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MusicoID">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.MusicoID">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.MusicoID">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>-->
+<div id="content-page" class="content-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="iq-card">
+                    <div class="iq-card-header d-flex justify-content-between">
+                        <div class="iq-header-title">
+                            <h4 class="card-title">Lista de Artistas</h4>
+                        </div>
+                        <div class="iq-card-header-toolbar d-flex align-items-center">
+                            <a class="btn btn-primary" asp-action="Create">Adicionar novo Album</a>
+                        </div>
+                    </div>
+                    <div class="iq-card-body">
+                        <div class="table-responsive">
+                            <table class="data-tables table table-striped table-bordered" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 5%;">Foto</th>
+                                        <th style="width: 15%;">@Html.DisplayNameFor(model => model.Nome)</th>
+                                        <th style="width: 10%;"> @Html.DisplayNameFor(model => model.Telefone)</th>
+                                        <th style="width: 15%;"> @Html.DisplayNameFor(model => model.Endereço)</th>
+                                        <th style="width: 5%;">@Html.DisplayNameFor(model => model.Numero)</th>
+                                        <th style="width: 10%;">@Html.DisplayNameFor(model => model.Cidade)</th>
+                                        <th style="width: 10%;">@Html.DisplayNameFor(model => model.Estado)</th>
+                                        <th style="width: 10%;">@Html.DisplayNameFor(model => model.Bairro)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td><img src="~/images/dashboard/feature-album-artist/04.png" class="img-fluid avatar-50 rounded" alt=""></td>
+                                            <td>
+                                            @Html.DisplayFor(modelItem => item.Nome)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Telefone)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Endereço)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Numero)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Estado)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Cidade)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Bairro)
+                                            </td>
+                                            <td>
+                                                <div class="flex align-items-center list-user-action">
+                                                    <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="Editar" data-original-title="Editar" asp-action="Edit" asp-route-id="@item.MusicoID">E</a>
+                                                    <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="Visualizar" data-original-title="Visualizar" asp-action="Details" asp-route-id="@item.MusicoID">V</a>
+                                                    <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="Deletar" data-original-title="Deletar" asp-action="Delete" asp-route-id="@item.MusicoID">X</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

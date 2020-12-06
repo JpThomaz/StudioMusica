@@ -7,7 +7,7 @@ namespace StudioMusica.Models
 {
     public class Faixa
     {
-        public long? FaixaId { get; set; }
+        public long? FaixaID { get; set; }
         public string Nome { get; set; }
         public string Autor { get; set; }
         public DateTime DataLancamento { get; set; }

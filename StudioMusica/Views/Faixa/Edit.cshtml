@@ -1,0 +1,96 @@
+﻿@model StudioMusica.Models.Faixa
+
+@{
+    ViewData["Title"] = "EditFaixa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--
+<h1>Editar Faixa</h1>
+
+<h4>Faixa</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditFaixa">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="FaixaID" />
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Autor" class="control-label"></label>
+                <input asp-for="Autor" class="form-control" />
+                <span asp-validation-for="Autor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataLancamento" class="control-label"></label>
+                <input asp-for="DataLancamento" class="form-control" />
+                <span asp-validation-for="DataLancamento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Volume" class="control-label"></label>
+                <input asp-for="Volume" class="form-control" />
+                <span asp-validation-for="Volume" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="IndexFaixa">voltar a lista</a>
+</div>
+-->
+
+<div id="content-page" class="content-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="iq-card">
+                    <div class="iq-card-header d-flex justify-content-between">
+                        <div class="iq-header-title">
+                            <h4 class="card-title">Adicionar Album</h4>
+                        </div>
+                    </div>
+                    <div class="iq-card-body">
+                        <form asp-action="Edit">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="FaixaID" />
+                            <div class="form-group">
+                                <label asp-for="Nome" class="control-label"></label>
+                                <input asp-for="Nome" class="form-control" />
+                                <span asp-validation-for="Nome" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Autor" class="control-label"></label>
+                                <input asp-for="Autor" class="form-control" />
+                                <span asp-validation-for="Autor" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="DataLancamento" class="control-label"></label>
+                                <input asp-for="DataLancamento" class="form-control" />
+                                <span asp-validation-for="DataLancamento" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Volume" class="control-label"></label>
+                                <input asp-for="Volume" class="form-control" />
+                                <span asp-validation-for="Volume" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Save" class="btn btn-primary" />
+                            </div>
+                        </form>
+                        <a asp-action="Index" class="btn btn-danger">Voltar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

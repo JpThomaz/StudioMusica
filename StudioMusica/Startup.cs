@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using StudioMusica.Data;
+using StudioMusica.Models;
+using StudioMusica.Services;
 
 namespace StudioMusica
 {
@@ -27,6 +29,7 @@ namespace StudioMusica
         {
             services.AddControllersWithViews();
             services.AddDbContext<StudioContext>(options => options.UseSqlServer(Configuration.GetConnectionString("StudioMusicaConnection")));
+            services.AddScoped<IFileService, FileService>();
         }
         
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,13 +61,10 @@ namespace StudioMusica
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default2",
-                    pattern: "{controller=Home}/{action=Privacy}/{id?}");
+                    name: "IndexAlbum",
+                    pattern: "{controller=Studio}/{action=IndexAlbum}/{id?}");
                 
             });
-          
-            
-            
         }
     }
 }

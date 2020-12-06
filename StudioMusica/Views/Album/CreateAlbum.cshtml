@@ -1,0 +1,87 @@
+﻿@model StudioMusica.Models.Album
+<!--
+<h1>CreateAlbum</h1>
+
+<h4>Album</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateAlbum">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataAlbum" class="control-label"></label>
+                <input asp-for="DataAlbum" class="form-control" />
+                <span asp-validation-for="DataAlbum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Formato" class="control-label"></label>
+                <input asp-for="Formato" class="form-control" />
+                <span asp-validation-for="Formato" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    </div>
+
+    <div>
+    <a asp-action="Index">Back to List</a>
+    </div>
+    -->
+
+<div id="content-page" class="content-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="iq-card">
+                    <div class="iq-card-header d-flex justify-content-between">
+                        <div class="iq-header-title">
+                            <h4 class="card-title">Adicionar Album</h4>
+                        </div>
+                    </div>
+                    <div class="iq-card-body">
+                        <form asp-action="CreateAlbum">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                <label asp-for="Nome" class="control-label"></label>
+                                <input asp-for="Nome" class="form-control" />
+                                <span asp-validation-for="Nome" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+
+                                <label class="text-light">Foto</label>
+                                <input class="form-control-file text-light" type="file" />
+                                <span class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="DataAlbum" class="control-label"></label>
+                                <input asp-for="DataAlbum" class="form-control" />
+                                <span asp-validation-for="DataAlbum" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Formato" class="control-label"></label>
+                                <input asp-for="Formato" class="form-control" />
+                                <span asp-validation-for="Formato" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Genero" class="control-label"></label>
+                                <input asp-for="Genero" class="form-control" />
+                                <span asp-validation-for="Genero" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Create" class="btn btn-primary" />
+                            </div>
+                        </form>
+                        <button asp-action="IndexAlbum" class="btn btn-danger">Voltar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
