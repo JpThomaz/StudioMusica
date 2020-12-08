@@ -18,8 +18,13 @@ namespace StudioMusica.Models
         public string Genero { get; set; }
 
         public string Foto { get; set; }
-        
-       
+        public IList<Faixa> Faixas { get; set; }
+
+        public Album()
+        {
+            Faixas = new List<Faixa>();
+        }
+
     }
     
        

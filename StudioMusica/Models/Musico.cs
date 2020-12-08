@@ -15,11 +15,15 @@ namespace StudioMusica.Models
         public string Estado { get; set; }
         public string Cidade { get; set; }
         public string Bairro { get; set; }
+
+        public IList<Album> Albuns { get; set; }
+
         public Musico()
         {
-
+            Albuns = new List<Album>();
         }
-
+        
+        public Faixa Faixas { get; set; }
         internal void Add(Musico musicos)
         {
             throw new NotImplementedException();

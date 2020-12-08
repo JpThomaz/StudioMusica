@@ -16,6 +16,8 @@ namespace StudioMusica
         public static void Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
+            
+            /*
              using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
@@ -29,9 +31,9 @@ namespace StudioMusica
                     var logger = services.GetRequiredService<Logger<Program>>();
                     logger.LogError(e, "Erro ao criar a base de dados");
                 }
-                host.Run();
-            }
-
+                
+            }*/
+            host.Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

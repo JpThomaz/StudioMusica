@@ -9379,23 +9379,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DE PAULA\\.nuget\\packages\\": {},
+    "C:\\Users\\Amand\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projetos DEV\\Faculdade\\CRUD\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
+      "projectUniqueName": "C:\\Projeto\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
       "projectName": "StudioMusica",
-      "projectPath": "F:\\Projetos DEV\\Faculdade\\CRUD\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
-      "packagesPath": "C:\\Users\\DE PAULA\\.nuget\\packages\\",
-      "outputPath": "F:\\Projetos DEV\\Faculdade\\CRUD\\StudioMusica\\StudioMusica\\obj\\",
+      "projectPath": "C:\\Projeto\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
+      "packagesPath": "C:\\Users\\Amand\\.nuget\\packages\\",
+      "outputPath": "C:\\Projeto\\StudioMusica\\StudioMusica\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\DE PAULA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Amand\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
