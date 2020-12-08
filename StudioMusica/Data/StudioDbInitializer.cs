@@ -9,7 +9,7 @@ namespace StudioMusica.Data
     {
         public static void Initialize(StudioContext context)
         {
-             //context.Database.EnsureCreated();
+            // context.Database.EnsureCreated();
         }
     }
 }

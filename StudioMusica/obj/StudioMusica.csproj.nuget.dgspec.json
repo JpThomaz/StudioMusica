@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projetos DEV\\Faculdade\\CRUD\\StudioMusica\\StudioMusica\\StudioMusica.csproj": {}
+    "C:\\Users\\Geiciana\\source\\repos\\StudioMusica\\StudioMusica\\StudioMusica.csproj": {}
   },
   "projects": {
-    "F:\\Projetos DEV\\Faculdade\\CRUD\\StudioMusica\\StudioMusica\\StudioMusica.csproj": {
+    "C:\\Users\\Geiciana\\source\\repos\\StudioMusica\\StudioMusica\\StudioMusica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projetos DEV\\Faculdade\\CRUD\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
+        "projectUniqueName": "C:\\Users\\Geiciana\\source\\repos\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
         "projectName": "StudioMusica",
-        "projectPath": "F:\\Projetos DEV\\Faculdade\\CRUD\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
-        "packagesPath": "C:\\Users\\DE PAULA\\.nuget\\packages\\",
-        "outputPath": "F:\\Projetos DEV\\Faculdade\\CRUD\\StudioMusica\\StudioMusica\\obj\\",
+        "projectPath": "C:\\Users\\Geiciana\\source\\repos\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
+        "packagesPath": "C:\\Users\\Geiciana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Geiciana\\source\\repos\\StudioMusica\\StudioMusica\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DE PAULA\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Geiciana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -30,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -41,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "EntityFramework": {
               "target": "Package",
@@ -97,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
