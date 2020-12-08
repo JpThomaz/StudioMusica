@@ -14,6 +14,8 @@ namespace StudioMusica.Models
         public string Serie { get; set; }
         public string Cor { get; set; }
 
+        public Musico Musicos { get; set; }
+
         public Instrumento()
         {
 

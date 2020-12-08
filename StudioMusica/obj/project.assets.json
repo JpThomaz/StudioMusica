@@ -9379,20 +9379,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Geiciana\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\Amand\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+>>>>>>> de5b9b31975b7c3248249b2b22fc2030f03629a4
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Geiciana\\source\\repos\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
       "projectName": "StudioMusica",
       "projectPath": "C:\\Users\\Geiciana\\source\\repos\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
       "packagesPath": "C:\\Users\\Geiciana\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Geiciana\\source\\repos\\StudioMusica\\StudioMusica\\obj\\",
+=======
+      "projectUniqueName": "C:\\Projeto\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
+      "projectName": "StudioMusica",
+      "projectPath": "C:\\Projeto\\StudioMusica\\StudioMusica\\StudioMusica.csproj",
+      "packagesPath": "C:\\Users\\Amand\\.nuget\\packages\\",
+      "outputPath": "C:\\Projeto\\StudioMusica\\StudioMusica\\obj\\",
+>>>>>>> de5b9b31975b7c3248249b2b22fc2030f03629a4
       "projectStyle": "PackageReference",
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\Geiciana\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+        "C:\\Users\\Amand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+>>>>>>> de5b9b31975b7c3248249b2b22fc2030f03629a4
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

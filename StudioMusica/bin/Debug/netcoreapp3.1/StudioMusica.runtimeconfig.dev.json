@@ -1,8 +1,14 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\Geiciana\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\Geiciana\\.nuget\\packages"
+=======
+      "C:\\Users\\Amand\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Amand\\.nuget\\packages",
+      "C:\\Microsoft\\Xamarin\\NuGet"
+>>>>>>> de5b9b31975b7c3248249b2b22fc2030f03629a4
     ]
   }
 }

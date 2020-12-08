@@ -12,6 +12,8 @@ namespace StudioMusica.Models
         public string Autor { get; set; }
         public DateTime DataLancamento { get; set; }
         public string Volume { get; set; }
+
+        public Album Albuns { get; set; }
         public Faixa()
         {
 
